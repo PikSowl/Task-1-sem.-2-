@@ -4,9 +4,12 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
+    ps::Encryptor Enc;
 
-    cout << "Enter a sentence that shorter than 30 words";
+    cout << "Enter a sentence that shorter than 30 words" << endl;
+    std::string line;
+    getline(cin, line);
 
+    Enc.Encode(line);
 }
